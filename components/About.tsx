@@ -4,8 +4,53 @@ interface AboutProps {}
 
 export const About: React.FC<AboutProps> = ({}) => {
   return (
-    <div>
-      <h3>About</h3>
+    <div className="text-[#FAF9F6] w-1/2 flex flex-row justify-center mx-auto">
+      <div className="w-1/2">
+        <div className="flex w-full justify-center mb-4">
+          {' '}
+          <h1 className="text-3xl font-extrabold mr-2">About</h1>
+          <div className="flex-grow border-t border-[#FAF9F6] my-auto px-8 opacity-25"></div>
+        </div>
+        <p>
+          Nearly three years ago, I decided to switch career paths and pursue
+          web development. Since then, I have learned many new technologies
+          focusing primarily on React. As a QA software engineer, my
+          problem-solving skills are put to use on a daily basis and I enjoy
+          collaborating with the software development team as I test new
+          features. My current role has taught me how to work in a agile
+          environment and prioritize tickets.
+        </p>
+        <br />
+        <p>
+          During my coding journey, I have worked on many full-stack
+          applications using Node and React. Over the years, I have improved my
+          design skills using APIs such as Tailwind CSS and Material UI. Most of
+          my projects include databases using either Postgres or Firebase.{' '}
+        </p>
+        <br />
+        <p className="mb-4">
+          Here are a few technologies I’ve been working with recently:
+        </p>
+        <div className="flex px-4">
+          <div className="w-1/2 list-inside">
+            <ul className="list-disc">
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Node</li>
+            </ul>
+          </div>
+          <div className="w-1/2 list-inside">
+            <ul className="list-disc">
+              <li>React</li>
+              <li>SQL</li>
+              <li>Prisma 2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="w-1/2 ml-8 my-auto">
+        <img src="/profilePhoto.jpg" className="rounded-md glow" />
+      </div>
     </div>
   );
 };

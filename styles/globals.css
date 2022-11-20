@@ -21,3 +21,6 @@ h6 {
 .text-glow:hover {
   text-shadow: 0 0 10px #39ff14, 0 0 10px #39ff14;
 }
+.glow {
+  box-shadow: #39ff14 0px 0px 10px 0px;
+}
