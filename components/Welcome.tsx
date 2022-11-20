@@ -1,11 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface WelcomeProps {}
 
 export const Welcome: React.FC<WelcomeProps> = ({}) => {
   return (
-    <div className="text-[#FAF9F6] w-full h-screen flex justify-center items-center">
-      <div className="w-1/2 pb-16">
+    <div className="text-[#FAF9F6] w-full h-screen flex justify-center items-center px-16">
+      <div className="w-3/4 pb-16">
         <p className="text-8xl">
           Hi, my
           <br />
@@ -20,9 +21,6 @@ export const Welcome: React.FC<WelcomeProps> = ({}) => {
           <br />
           Dallas, Texas.
         </p>
-      </div>
-      <div className="w-1/2">
-        <p className="text-5xl">Hi, my name is Erik</p>
       </div>
     </div>
   );

@@ -4,7 +4,10 @@
 
 body {
   background-color: #091310;
-  font-family: 'Cardo', serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  padding-left: 2rem; /* 32px */
+  padding-right: 2rem; /* 32px */
 }
 h1,
 h2,
@@ -12,6 +15,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.text-glow:hover {
+  text-shadow: 0 0 10px #39ff14, 0 0 10px #39ff14;
 }
