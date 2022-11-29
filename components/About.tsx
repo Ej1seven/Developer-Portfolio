@@ -4,8 +4,11 @@ interface AboutProps {}
 
 export const About: React.FC<AboutProps> = ({}) => {
   return (
-    <div className="text-[#FAF9F6] w-1/2 flex flex-row justify-center mx-auto">
-      <div className="w-1/2">
+    <div
+      className="text-[#FAF9F6] w-3/4 xl:w-1/2 flex flex-col md:flex-row justify-center mx-auto mb-64 max-w-screen-md"
+      id="about"
+    >
+      <div className="w-full md:w-1/2 mb-8 md:mb-8">
         <div className="flex w-full justify-center mb-4">
           {' '}
           <h1 className="text-3xl font-extrabold mr-2">About</h1>
@@ -15,10 +18,11 @@ export const About: React.FC<AboutProps> = ({}) => {
           Nearly three years ago, I decided to switch career paths and pursue
           web development. Since then, I have learned many new technologies
           focusing primarily on React. As a QA software engineer, my
-          problem-solving skills are put to use on a daily basis and I enjoy
-          collaborating with the software development team as I test new
-          features. My current role has taught me how to work in a agile
-          environment and prioritize tickets.
+          problem-solving skills are put to the test on a daily basis. I am
+          expected to provide clear communication and documentation when
+          collaborating with the software development team. Fortunately, my
+          current position has taught me how to work in a agile environment and
+          prioritize tasks.
         </p>
         <br />
         <p>
@@ -48,7 +52,7 @@ export const About: React.FC<AboutProps> = ({}) => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 ml-8 my-auto">
+      <div className="w-2/3 mx-auto md:min-w-[150px] xl:w-1/2 md:ml-8 my-auto">
         <img src="/profilePhoto.jpg" className="rounded-md glow" />
       </div>
     </div>
