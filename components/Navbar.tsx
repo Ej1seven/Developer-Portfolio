@@ -73,6 +73,17 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </Link>
           <Link
             activeClass="active"
+            to="articles"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="mx-4 cursor-pointer hover:animate-bounce text-glow"
+          >
+            Articles
+          </Link>
+          <Link
+            activeClass="active"
             to="contact"
             spy={true}
             smooth={true}
@@ -148,6 +159,18 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   onClick={() => setShowModal(false)}
                 >
                   Project
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="articles"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  onClick={() => setShowModal(false)}
+                >
+                  Articles
                 </Link>
                 <Link
                   activeClass="active"

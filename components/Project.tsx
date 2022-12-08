@@ -48,14 +48,26 @@ export const Project: React.FC<ProjectProps> = ({}) => {
                 <p className="mx-2">Prisma 2</p>
               </div>
               <div className="flex justify-end w-full mt-4 md:mt-2">
-                <img
-                  src="/github.png"
-                  className="w-6 h-6 cursor-pointer mr-4"
-                />
-                <img
-                  src="/resize.png"
-                  className="w-6 h-6 cursor-pointer md:mr-4"
-                />
+                <a
+                  href="https://github.com/Ej1seven/Kryptoturf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/github.png"
+                    className="w-6 h-6 cursor-pointer mr-4"
+                  />
+                </a>
+                <a
+                  href="https://erikhunter.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/resize.png"
+                    className="w-6 h-6 cursor-pointer md:mr-4"
+                  />
+                </a>
               </div>
             </div>
             <div className="flex justify-end">
