@@ -22,7 +22,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
           Lets Get In Touch
         </p>
         <p className="text-center max-w-[550px] mx-auto mb-14">
-          I'm currently open for collaboration, job opportunites, and any
+          I&apos;m currently open for collaboration, job opportunites, and any
           questions you may have. Even you if you just want say hi, my inbox is
           always open!{' '}
         </p>

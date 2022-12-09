@@ -1,8 +1,17 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import HashLoader from 'react-spinners/HashLoader';
+import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
+  /*Display a spinning loading icon when data is loaded*/
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
   return (
     <>
       {' '}
@@ -14,7 +23,23 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      {isLoading ? (
+        <div className="flex justify-center items-center w-full h-screen">
+          {' '}
+          <HashLoader
+            color={'#39FF14'}
+            loading={isLoading}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <>
+          {' '}
+          <Component {...pageProps} />
+        </>
+      )}
     </>
   );
 }

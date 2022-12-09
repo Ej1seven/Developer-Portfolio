@@ -59,7 +59,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
                   />
                 </a>
                 <a
-                  href="https://erikhunter.dev/"
+                  href="https://kryptoturf.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
