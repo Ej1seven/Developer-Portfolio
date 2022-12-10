@@ -19,7 +19,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
       <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px]">
         <Link
           href="/details"
-          className="md:w-3/5 order-1 md:order-first mt-4 md:mt-0"
+          className="z-40 md:w-3/5 order-1 md:order-first mt-4 md:mt-0"
         >
           <img
             src="/kryptoturfHomepage.png"
@@ -30,7 +30,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
           <p className="text-center text-5xl lg:text-7xl md:absolute md:top-8 top-bottom-overflow-fade my-4 md:my-0 ">
             Kryptoturf
           </p>
-          <div className="md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-36 lg:top-40">
+          <div className="z-50 md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-36 lg:top-40">
             <p className="bg-[#091310] rounded-md p-8 text-center md:text-left">
               Kryptoturf is a NFT marketplace built on the Goerli testnet, where
               users have the ability to create, list, and buy NFTs.
@@ -47,7 +47,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
                 <p className="mx-2">ThirdWeb</p>
                 <p className="mx-2">Prisma 2</p>
               </div>
-              <div className="flex justify-end w-full mt-4 md:mt-2">
+              <div className="z-50 flex justify-end w-full mt-4 md:mt-2">
                 <a
                   href="https://github.com/Ej1seven/Kryptoturf"
                   target="_blank"
@@ -71,7 +71,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
               </div>
             </div>
             <div className="flex justify-end">
-              <button className="lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 text-glow w-28 mt-4 md:mt-0">
+              <button className="z-50 lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 text-glow w-28 mt-4 md:mt-0">
                 <Link href="/details"> Details</Link>
               </button>
             </div>
