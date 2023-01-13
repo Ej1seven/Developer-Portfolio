@@ -5,7 +5,9 @@ import HashLoader from 'react-spinners/HashLoader';
 import { About } from '../components/About';
 import { Articles } from '../components/Articles';
 import { Contact } from '../components/Contact';
+import { Feedback } from '../components/Feedback';
 import { Footer } from '../components/Footer';
+import { Freelance } from '../components/Freelance';
 import { Navbar } from '../components/Navbar';
 import { Project } from '../components/Project';
 import { Welcome } from '../components/Welcome';
@@ -19,6 +21,8 @@ export default function Home() {
         <Welcome />
         <About />
         <Project />
+        <Freelance />
+        <Feedback />
         <Articles />
         <Contact />
         <Footer />

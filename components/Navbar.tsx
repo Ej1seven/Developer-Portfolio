@@ -75,6 +75,28 @@ export const Navbar: React.FC<NavbarProps> = () => {
           </Link>
           <Link
             activeClass="active"
+            to="freelance"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="mx-4 cursor-pointer hover:animate-bounce text-glow"
+          >
+            Freelance
+          </Link>
+          <Link
+            activeClass="active"
+            to="feedback"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="mx-4 cursor-pointer hover:animate-bounce text-glow"
+          >
+            Reviews
+          </Link>
+          <Link
+            activeClass="active"
             to="articles"
             spy={true}
             smooth={true}
@@ -96,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
             Contact
           </Link>
           <Link2
-            href="/Erik-Hunter-Resume.pdf"
+            href="/Erik Hunter - Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -170,6 +192,30 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 </Link>
                 <Link
                   activeClass="active"
+                  to="freelance"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  onClick={() => setShowModal(false)}
+                >
+                  Freelance
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="feedback"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  onClick={() => setShowModal(false)}
+                >
+                  Reviews
+                </Link>
+                <Link
+                  activeClass="active"
                   to="articles"
                   spy={true}
                   smooth={true}
@@ -193,7 +239,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   Contact
                 </Link>
                 <Link2
-                  href="/Erik-Hunter-Resume.pdf"
+                  href="/Erik Hunter - Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
