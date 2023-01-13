@@ -26,13 +26,13 @@ export const Feedback: React.FC<ProjectProps> = ({}) => {
             <img src="/star.png" className="mr-1 max-h-[24px] my-auto" />
             <p className="ml-1">5.00 Dec 21, 2022 - Jan 10, 2023 </p>
           </div>
-          <p className="italic">
-            "Erik completely revamped our hemp product e-commerce store with a
+          <q className="italic">
+            Erik completely revamped our hemp product e-commerce store with a
             Shopify theme. He did an amazing job while staying in great
             communication, he gets the work done well and quickly and I never
             doubted his capabilities once. Definitely recommend him and will use
-            him in the future!"
-          </p>
+            him in the future!
+          </q>
         </div>
       </div>
     </div>
