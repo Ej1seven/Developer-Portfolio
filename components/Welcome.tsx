@@ -13,7 +13,7 @@ export const Welcome: React.FC<WelcomeProps> = ({}) => {
           name is <span className="font-extrabold text-[#39FF14]">Erik</span>
         </p>
         <p className="text-4xl mt-7">
-          I'm an{' '}
+          I&apos;m an{' '}
           <span className="font-extrabold text-[#39FF14]">
             frontend developer{' '}
           </span>

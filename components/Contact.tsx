@@ -22,11 +22,11 @@ export const Contact: React.FC<ContactProps> = ({}) => {
           Lets Get In Touch
         </p>
         <p className="text-center max-w-[550px] mx-auto mb-14">
-          I'm currently open for collaboration, job opportunites, and any
+          I&apos;m currently open for collaboration, job opportunites, and any
           questions you may have. Even you if you just want say hi, my inbox is
           always open!{' '}
         </p>
-        <div className="w-full flex justify-center">
+        <div className="z-50 w-full flex justify-center">
           <a href="mailto:erikhunter@erikhunter.dev">
             <button className="lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 hover:animate-bounce text-glow w-28">
               Details
