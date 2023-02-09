@@ -13,9 +13,9 @@ export const Welcome: React.FC<WelcomeProps> = ({}) => {
           name is <span className="font-extrabold text-[#39FF14]">Erik</span>
         </p>
         <p className="text-4xl mt-7">
-          I&apos;m an{' '}
+          I&apos;m a{' '}
           <span className="font-extrabold text-[#39FF14]">
-            frontend developer{' '}
+            full stack developer{' '}
           </span>
           from
           <br />

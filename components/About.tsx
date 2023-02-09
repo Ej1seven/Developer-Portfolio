@@ -16,38 +16,40 @@ export const About: React.FC<AboutProps> = ({}) => {
         </div>
         <p>
           Nearly three years ago, I decided to switch career paths and pursue
-          web development. Since then, I have learned many new technologies
-          focusing primarily on React. As a QA software engineer, my
-          problem-solving skills are put to the test on a daily basis. I am
-          expected to provide clear communication and documentation when
-          collaborating with the software development team. Fortunately, my
-          current position has taught me how to work in a agile environment and
-          prioritize tasks.
+          web development. Since then, I have learned many new technologies, but
+          my focus is targeted on React and Angular. During my coding journey I
+          have worked on many full-stack applications using Node and React. Over
+          the years, I have improved my design skills using APIs such as
+          Tailwind CSS and Material UI. Most of my projects include a database
+          using either Postgres, MySQL or Firebase.{' '}
         </p>
         <br />
-        <p>
-          During my coding journey, I have worked on many full-stack
-          applications using Node and React. Over the years, I have improved my
-          design skills using APIs such as Tailwind CSS and Material UI. Most of
-          my projects include databases using either Postgres or Firebase.{' '}
-        </p>
-        <br />
-        <p className="mb-4">
-          Here are a few technologies I’ve been working with recently:
-        </p>
+        {/* <div className="mb-4 border-t border-[#FAF9F6]">
+          <div className="">Tech Stack</div>
+        </div> */}
+        <div className="w-full flex ">
+          {' '}
+          <div className="flex-grow border-t border-[#FAF9F6] w-1/4 my-auto opacity-25"></div>
+          <h1 className="text-3xl lg:text-3xl font-extrabold  w-2/3 text-center mb-4">
+            Tech Stack
+          </h1>
+          <div className="flex-grow border-t border-[#FAF9F6] w-1/4 my-auto opacity-25"></div>
+        </div>
         <div className="flex px-4">
           <div className="w-1/2 list-inside">
             <ul className="list-disc">
-              <li>Javascript</li>
               <li>Typescript</li>
-              <li>Node</li>
+              <li>Java</li>
+              <li>Angular</li>
+              <li>React</li>
             </ul>
           </div>
           <div className="w-1/2 list-inside">
             <ul className="list-disc">
-              <li>React</li>
-              <li>SQL</li>
-              <li>Prisma 2</li>
+              <li>Node.js</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>Postgres</li>
             </ul>
           </div>
         </div>
