@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
       <div
         className={`${
           showNavbar &&
-          'w-full h-36 flex items-center text-[#FAF9F6] fixed ease-in duration-500 flex p-6'
+          'w-full h-36 flex items-center text-[#FAF9F6] fixed ease-in duration-500 flex p-6 z-50'
         } hide-navbar-mobile`}
       >
         <div className="w-1/2">
@@ -159,7 +159,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
           <img src="/hamburger.png" className="h-10 sm:h-full cursor-pointer" />
         </div>
         {showModal && (
-          <div className="fixed bg-white h-screen top-0 right-0 w-96 text-black flex flex-col z-[100]">
+          <div className="fixed bg-white h-screen top-0 right-0 w-96 text-black flex flex-col">
             <div className="flex justify-end w-full p-4 h-16">
               {' '}
               <img
