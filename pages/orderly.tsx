@@ -20,7 +20,7 @@ export default function Orderly() {
     let text: any;
     if (option === 1) {
       title = 'Deployment';
-      text = `<p>I proficiently implemented the deployment of our Node.js server and Postgres database by utilizing a robust infrastructure platform called Railway. The seamless deployment of the server from my Github repository was facilitated with ease. Similarly, the creation of the Postgres database was completed expeditiously with the mere click of two buttons. I successfully integrated our domain name, app.orderly.pro, procured via Namecheap, with our server by accessing the settings and appending the requisite DNS configuration data. I followed this same process when deploying the frontend through Vercel.</p></br><p>Vercel</p></br><img src="/vercel-orderly.png"/></br></br><p>Railway App</p></br><img src="/orderly-railway.png"/>`;
+      text = `<p>I implemented the deployment of our Node.js server and Postgres database by utilizing a robust infrastructure platform called Railway. The seamless deployment of the server from my Github repository was facilitated with ease. Similarly, the creation of the Postgres database was completed expeditiously with the mere click of two buttons. I successfully integrated our domain name, app.orderly.pro, procured via Namecheap, with our server by accessing the settings and appending the required DNS configuration data. I followed this same process when deploying the frontend through Vercel.</p></br><p>Vercel</p></br><img src="/vercel-orderly.png"/></br></br><p>Railway App</p></br><img src="/orderly-railway.png"/>`;
     }
     if (option === 2) {
       title = 'Email verification';
