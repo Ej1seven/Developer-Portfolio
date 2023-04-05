@@ -18,10 +18,11 @@ export const About: React.FC<AboutProps> = ({}) => {
           Nearly three years ago, I decided to switch career paths and pursue
           web development. Since then, I have learned many new technologies, but
           my focus is targeted on React and Angular. During my coding journey I
-          have worked on many full-stack applications using Node and React. Over
-          the years, I have improved my design skills using APIs such as
-          Tailwind CSS and Material UI. Most of my projects include a database
-          using either Postgres, MySQL or Firebase.{' '}
+          have developed numerous full-stack applications utilizing this modern
+          tech stack. Throughout the years, my design skills have been refined
+          through the utilization of APIs like Tailwind CSS and Material UI. The
+          majority of my projects involve implementing a database such as
+          Postgres, MySQL, or Firebase.
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
