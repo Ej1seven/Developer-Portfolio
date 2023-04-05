@@ -14,11 +14,14 @@ import { Welcome } from '../components/Welcome';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [navbar, setNavbar] = useState(false);
+  const updateNavbarStatus = (navbar: any): void => {
+    setNavbar(navbar);
+  };
   return (
     <div className="overflow-hidden">
       <>
-        <Navbar showNavbar={() => setShowNavbar(showNavbar)} />
+        <Navbar updateNavbarStatus={updateNavbarStatus} />
         <Welcome />
         <About />
         <Project />
@@ -27,7 +30,7 @@ export default function Home() {
         <Articles />
         <Contact />
         <Footer />
-        {!showNavbar && (
+        {!navbar && (
           <>
             <div className="fixed bottom-0 left-0 text-white w-1/2 flex justify-start">
               <div className="flex justify-start pl-2 xsm:pl-8 xl:pl-24">
