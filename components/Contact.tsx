@@ -29,7 +29,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
         <div className="z-50 w-full flex justify-center">
           <a href="mailto:erikhunter@erikhunter.dev">
             <button className="lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 hover:animate-bounce text-glow w-28">
-              Details
+              Email Me
             </button>
           </a>
         </div>
