@@ -93,10 +93,10 @@ export default function Orderly() {
               meetups, providing a supportive community for all. Orderly is an
               automated inventory management application, designed to allow
               store owners the ability to place orders automatically as their
-              stock levels approach a designated percentage of maximum
-              capacity.Clayton Breland, Joshua Ow, and I, Erik Hunter,
-              collaborated to develop this application. Below I have highlighted
-              my direct contributions to the project.
+              stock levels approach a designated percentage of maximum capacity.
+              Clayton Breland, Joshua Ow, and I, Erik Hunter, collaborated to
+              develop this application. Below I have highlighted my direct
+              contributions to the project.
             </p>
             <div className="mt-8 w-full grid gap-2 grid-cols-2">
               <button

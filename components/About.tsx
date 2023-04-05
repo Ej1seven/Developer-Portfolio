@@ -16,13 +16,13 @@ export const About: React.FC<AboutProps> = ({}) => {
         </div>
         <p>
           Nearly three years ago, I decided to switch career paths and pursue
-          web development. Since then, I have learned many new technologies, but
-          my focus is targeted on React and Angular. During my coding journey I
-          have developed numerous full-stack applications utilizing this modern
-          tech stack. Throughout the years, my design skills have been refined
-          through the utilization of APIs like Tailwind CSS and Material UI. The
-          majority of my projects involve implementing a database such as
-          Postgres, MySQL, or Firebase.
+          web development. Subsequently, I have gained knowledge of various new
+          technologies. I specialize in React and Angular. During my coding
+          journey I have developed numerous full-stack applications utilizing
+          this modern tech stack. Throughout the years, my design skills have
+          improved through the utilization of APIs like Tailwind CSS and
+          Material UI. The majority of my projects involve implementing a
+          database such as Postgres, MySQL, or Firebase.
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
