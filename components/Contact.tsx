@@ -26,7 +26,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
           questions you may have. Even you if you just want say hi, my inbox is
           always open!{' '}
         </p>
-        <div className="z-40 w-full flex justify-center">
+        <div className="z-30 w-full flex justify-center">
           <a href="mailto:erikhunter@erikhunter.dev">
             <button className="lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 hover:animate-bounce text-glow w-28">
               Email Me

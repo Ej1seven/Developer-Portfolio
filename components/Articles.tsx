@@ -5,7 +5,7 @@ interface ArticlesProps {}
 export const Articles: React.FC<ArticlesProps> = ({}) => {
   return (
     <div
-      className="text-[#FAF9F6] w-3/4 flex flex-col justify-center mx-auto md:relative max-w-screen-lg mb-64 z-40"
+      className="text-[#FAF9F6] w-3/4 flex flex-col justify-center mx-auto md:relative max-w-screen-lg mb-64 z-30"
       id="articles"
     >
       <div className="flex md:w-3/5 lg:w-1/2 justify-center mb-8">
