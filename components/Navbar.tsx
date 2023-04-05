@@ -2,18 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import Link2 from 'next/link';
 
-interface NavbarProps {}
+interface NavbarProps {
+  showNavbar: any;
+}
 
-export const Navbar: React.FC<NavbarProps> = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
+export const Navbar: React.FC<NavbarProps> = ({ showNavbar }: NavbarProps) => {
+  // const [showNavbar, setShowNavbar] = useState(true);
   const [showModal, setShowModal]: any = useState(false);
   let theEnd = 0;
   const controlNavbar = () => {
     let scrollTop = window.pageXOffset || document.documentElement.scrollTop;
     if (scrollTop > theEnd) {
-      setShowNavbar(false);
+      // setShowNavbar(false);
+      showNavbar = false;
     } else {
-      setShowNavbar(true);
+      // setShowNavbar(true);
+      showNavbar = true;
     }
     theEnd = scrollTop;
   };
@@ -173,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   About
@@ -185,7 +189,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Project
@@ -197,7 +201,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Freelance
@@ -209,7 +213,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Reviews
@@ -221,7 +225,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 my-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Articles
@@ -233,7 +237,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 py-2 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Contact
@@ -243,7 +247,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mx-4 cursor-pointer text-white text-3xl font-extrabold border-4 bg-black rounded-2xl p-4 hover:animate-bounce text-glow">
+                  <button className="mx-4 py-2 cursor-pointer text-white text-3xl font-extrabold border-4 bg-black rounded-2xl p-4 hover:animate-bounce text-glow">
                     Resume
                   </button>
                 </Link2>
