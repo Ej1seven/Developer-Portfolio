@@ -221,7 +221,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
+                  className="mx-4 my-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
                   Articles
