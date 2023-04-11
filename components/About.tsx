@@ -20,7 +20,7 @@ export const About: React.FC<AboutProps> = ({}) => {
           specialize in React and Angular. During my arduous coding journey I
           developed full-stack applications utilizing the tech stack listed
           below. As you continue to look through my portfolio, I hope you enjoy
-          the projects and articles I've created. Thank you!
+          the projects and articles I&apos;ve created. Thank you!
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
