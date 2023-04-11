@@ -15,14 +15,12 @@ export const About: React.FC<AboutProps> = ({}) => {
           <div className="flex-grow border-t border-[#FAF9F6] my-auto px-8 opacity-25"></div>
         </div>
         <p>
-          Nearly three years ago, I decided to switch career paths and pursue
-          web development. Subsequently, I have gained knowledge of various new
-          technologies. I specialize in React and Angular. During my coding
-          journey I have developed numerous full-stack applications utilizing
-          this modern tech stack. Throughout the years, my design skills have
-          improved through the utilization of APIs like Tailwind CSS and
-          Material UI. The majority of my projects involve implementing a
-          database such as Postgres, MySQL, or Firebase.
+          Three years ago I decided to switch career paths and pursue web
+          development. Since then, I have learned many new technologies, but I
+          specialize in React and Angular. During my arduous coding journey I
+          developed full-stack applications utilizing the tech stack listed
+          below. As you continue to look through my portfolio, I hope you enjoy
+          the projects and articles I've created. Thank you!
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
