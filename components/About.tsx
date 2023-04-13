@@ -17,10 +17,10 @@ export const About: React.FC<AboutProps> = ({}) => {
         <p>
           Three years ago I decided to switch career paths and pursue web
           development. Since then, I have learned many new technologies, but I
-          specialize in React and Angular. During my arduous coding journey I
-          developed full-stack applications utilizing the tech stack listed
-          below. As you continue to look through my portfolio, I hope you enjoy
-          the projects and articles I&apos;ve created. Thank you!
+          specialize in React and Angular. Throughout my arduous coding journey
+          I have developed full-stack applications utilizing the tech stack
+          listed below. As you continue to browse my portfolio, please feel free
+          to send me an e-mail with your questions or comments. Thank you!
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">

@@ -24,19 +24,19 @@ export default function Orderly() {
     }
     if (option === 2) {
       title = 'CRUD';
-      text = `<p>As a contributor to the project, a primary responsibility assigned to me was configuring the multitude of requests and responses required for our server. The server is comprised of six distinct controllers, named authentication, company, inventory, orders, settings, and user. Each of the CRUD operations was systematically categorized and integrated into the routes folder. Below you can view two code snippets showing the orders controller file and routes file. </p</br><p style="margin-top: 10px;">Orders Controller</p></br><img src="/carbon15.png"/></br><p>Orders Route</p></br><img src="/carbon16.png"/>`;
+      text = `<p>One of the primary responsibilities assigned to me was configuring the multitude of requests and responses required for our server. The server is comprised of six distinct controllers; authentication, company, inventory, orders, settings, and user. The CRUD operations for each controller were systematically categorized and integrated into the routes folder. Below you can view the code for the orders controller and routes files. </p</br><p style="margin-top: 10px;">Orders Controller</p></br><img src="/carbon15.png"/></br><p>Orders Route</p></br><img src="/carbon16.png"/>`;
     }
     if (option === 3) {
-      title = 'Thirdweb API';
-      text = `<p>Thirdweb is a web3 development framework that allows users the ability to easily build, manage, and anaylze web3 applications. I used Thirdweb to construct most of the web3 features in my application. Below you will find examples of just a few methods I used from the Thirdweb API:</p></br><p>I used the deployNFTCollection() method to deploy a new NFT contract.</p><br/><img src="/carbon9.png"/></br><p>I used the direct.createListing() method to list the NFT on the marketplace for other users to purchase.</p></br><img src="/carbon10.png"/>`;
+      title = 'Prisma and Postgres';
+      text = `<p>In the project's planning phase, the team recognized the need for a database to store different types of data to ensure success. Based on my experience, I suggest utilizing Prisma as our ORM because it is user-friendly and integrates well with Postgres databases. One of the challenges we encountered during the database and table setup was determining as a team which data should be included in each table and how to structure our queries. You can find the database schema we agreed upon and the Railway tables after completing the database migration below.</p></br><p>Prisma Schema</p><br/><img src="/carbon17.png"/></br><p>Postgres Tables</p></br><img src="/PostgresTables.png"/>`;
     }
     if (option === 4) {
-      title = 'Image upload, display and save';
-      text = `<p>Uploading, displaying and saving images was a necessary feature for my application. In order to create an NFT or collection the user needs the ability to upload images. Adding a profile photo required the user to save their image to the database. Take a look at the code below to view how I set this up. </p></br><p>On the profile page the user can set their profile image. The profileImage variable contains two properties; preview and raw.</p><img  src="/carbon6.png"/></br><p>The handlePhotoChange function sets the profile image. The preview property takes the image file and converts it to a URL. The preview image will be displayed immediately before saving the photo to the server's upload folder.</p></br><img  src="/carbon7.png"/></br><p>Let's now take a look at the code inside submit(). The formData variable creates a new FormData object and this object contains the data that will be sent to the server. The reason for creating a FormData object is to make sure that the data sent to the server are encoded as Content-Type: multipart/form-data. Multipart/form-data makes it possible to send files to the server. The submit() function saves the image to the uploads folder on the server.</p></br><img src="carbon8.png"/>`;
+      title = 'CSV File Upload';
+      text = `<p>Recognizing the importance of adding inventory to our application, I proposed a solution to improve user efficiency by implementing a CSV upload feature. This idea stemmed from the realization that uploading a significant number of products individually would be impractical. With the CSV upload option, users can now add multiple products at once.</p></br><p>The sendCSVfile function located on the frontend is responsible for accepting the csv file selected by the end user and converting it into form data. After the conversion process, the data is transmitted to the inventory/upload path on the server.</p></br><img  src="/carbon18.png"/></br><p>Using the upload method, the convertCsvFileToJson POST request saves the CSV file to the uploads folder. After saving the file, I utilized an npm package named csvtojson for the purpose of transforming the CSV file into JSON format.</p></br><img  src="/carbon19.png"/></br><p>By utilizing the sendCSVfile function, the JSON data is passed to the createManyInventoryItems method, which in turn dispatches a POST request to the server's inventory/bulk endpoint.</p></br><img  src="/carbon20.png"/></br><p>Prisma's createMany command is utilized by the createManyInventoryItems endpoint to process the product list and create each product within a single transaction.</p></br><img src="carbon21.png"/>`;
     }
     if (option === 5) {
-      title = 'Server, ORM, and Docker utilization';
-      text = `<p>Setting up the server, ORM, and Docker was one of the more difficult tasks I ran into while developing this application. Take a look at the code below to see how I set up these components.</p></br><p>I set up the server using NodeJS and Express. The server contains three main routes; userAuth, marketItems and uploads. UserAuth handles the user logic such as signing in and setting up a new account. MarketItems handles all the logic related to NFTs, collections, image uploads, and transaction data. The uploads routes tells the server where to store image uploads.</p></br><img src="carbon11.png"/></br><p>I used Prisma as my ORM to handle data modeling. Below you can view the Prisma scheme.</p></br><img src="carbon12.png"/></br><p>Setting up Docker was fairly straightforward. You will notice that in the Dockerfile displayed below, I used the command "npx prisma generate" to initialize my database using the prisma scheme displayed in the previous code block.</p></br><img src="carbon13.png"/>`;
+      title = 'Authentication';
+      text = `<p>Users are authenticated at login when the access and refresh tokens are generated.</p></br><img src="carbon22.png"/></br><p>Users data is stored in the JWT, which can be accessed by various components throughout the application. To authenticate users as needed, I employed react-query to query the server's Redis cache. In the event that the access token has expired, the user will be redirected to the login page.</p></br><img src="carbon23.png"/></br>`;
     }
     if (option === 6) {
       title = 'Smart Contracts, Solidity';
@@ -115,19 +115,19 @@ export default function Orderly() {
                 className="border-2 border-[#3B9893] w-full sm:w-3/4 md:w-1/2 text-sm md:text-base p-2 h-24 sm:h-20 mx-auto rounded-md hover:bg-[#3B9893]"
                 onClick={() => messagePop(3)}
               >
-                Thirdweb API
+                Prisma and Postgres
               </button>
               <button
                 className="border-2 border-[#3B9893] w-full sm:w-3/4 md:w-1/2 text-sm md:text-base p-2 h-24 sm:h-20 mx-auto rounded-md hover:bg-[#3B9893]"
                 onClick={() => messagePop(4)}
               >
-                Image upload, display and save
+                CSV File Upload
               </button>
               <button
                 className="border-2 border-[#3B9893] w-full sm:w-3/4 md:w-1/2 text-sm md:text-base p-2 h-24 sm:h-20 mx-auto rounded-md hover:bg-[#3B9893]"
                 onClick={() => messagePop(5)}
               >
-                Server, ORM, and Docker utilization
+                Authentication
               </button>
               <button
                 className="border-2 border-[#3B9893] w-full sm:w-3/4 md:w-1/2 text-sm md:text-base p-2 h-24 sm:h-20 mx-auto rounded-md hover:bg-[#3B9893]"
