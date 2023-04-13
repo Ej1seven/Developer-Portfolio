@@ -39,8 +39,8 @@ export default function Orderly() {
       text = `<p>Users are authenticated at login when the access and refresh tokens are generated.</p></br><img src="carbon22.png"/></br><p>Users data is stored in the JWT, which can be accessed by various components throughout the application. To authenticate users as needed, I employed react-query to query the server's Redis cache. In the event that the access token has expired, the user will be redirected to the login page.</p></br><img src="carbon23.png"/></br>`;
     }
     if (option === 6) {
-      title = 'Smart Contracts, Solidity';
-      text = `<p>On the homepage, I added a feature that gives the user the ability to transfer funds from one crypto account to another. I put in place a smart contract using Solidity to manage this functionality. The user inputs the address of the account they wish to transfer their funds to, the amount of funds they want to transfer, a keyword used to pull a gif from "https://api.giphy.com", and a message that can been seen by the receiving account.</p></br><img style="margin: auto;" src="transactionInput.png"/></br><p>Below you can view the smart contract I created to handle the transfer of funds.</p></br><img src="carbon14.png"/>`;
+      title = 'Pop-ups';
+      text = `<p>One of the significant contributions I made was incorporating pop-ups in appropriate sections of the application. Initially, I underestimated the number of components that required pop-ups. To develop these pop-ups, I utilized the npm package sweetalert2 and also included personalized data and styling. Displayed below are several instances of the pop-ups I integrated.</p></br><p>This is an example of an error pop-up that appears if a user leaves a field empty while adding a product.</p></br><img style="margin: auto;" src="carbon24.png"/></br><p>This is an example of a pop-up that exhibits user details when the user icon on the sidebar is clicked.</p></br><p><img style="margin: auto;" src="carbon25.png"/></p></br><p>This is an example of an error pop-up that appears when a user uploads a CSV file that lacks a field.</p></br><img style="margin: auto;" src="carbon26.png"/>`;
     }
     return Swal.fire({
       icon: 'info',
@@ -133,7 +133,7 @@ export default function Orderly() {
                 className="border-2 border-[#3B9893] w-full sm:w-3/4 md:w-1/2 text-sm md:text-base p-2 h-24 sm:h-20 mx-auto rounded-md hover:bg-[#3B9893]"
                 onClick={() => messagePop(6)}
               >
-                Smart Contracts, Solidity
+                Pop-ups
               </button>
             </div>
           </div>
