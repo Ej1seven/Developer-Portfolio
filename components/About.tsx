@@ -17,17 +17,17 @@ export const About: React.FC<AboutProps> = ({}) => {
         <p>
           As a seasoned web developer, I thrive in the dynamic realm of coding
           and enjoy the ever-evolving challenges that come with it. My journey
-          began with a simple "Hello, World!" and has since evolved into a
-          deep-seated passion for creating robust, user-friendly applications.
-          Today, I am a professional web developer with three years of
-          experience helping clients design, develop, and maintain complex
-          applications. My skill set spans across the web development landscape,
-          from front-end technologies like HTML, CSS, and JavaScript to back-end
-          frameworks such as Node.js and Spring Boot. My goal is not just to
-          write code but to build solutions that make a meaningful impact.
-          Whether it's optimizing performance, enhancing user interfaces, or
-          solving complex problems, I approach each project with a blend of
-          creativity and pragmatism.
+          began with a simple &quot;Hello, World!&quot; and has since evolved
+          into a deep-seated passion for creating robust, user-friendly
+          applications. Today, I am a professional web developer with three
+          years of experience helping clients design, develop, and maintain
+          complex applications. My skill set spans across the web development
+          landscape, from front-end technologies like HTML, CSS, and JavaScript
+          to back-end frameworks such as Node.js and Spring Boot. My goal is not
+          just to write code but to build solutions that make a meaningful
+          impact. Whether it&apos;s optimizing performance, enhancing user
+          interfaces, or solving complex problems, I approach each project with
+          a blend of creativity and pragmatism.
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
