@@ -15,12 +15,19 @@ export const About: React.FC<AboutProps> = ({}) => {
           <div className="flex-grow border-t border-[#FAF9F6] my-auto px-8 opacity-25"></div>
         </div>
         <p>
-          Three years ago I decided to switch career paths and pursue web
-          development. Since then, I have learned many new technologies, but I
-          specialize in React and Angular. Throughout my arduous coding journey
-          I have developed full-stack applications utilizing the tech stack
-          listed below. As you continue to browse my portfolio, please feel free
-          to send me an e-mail with your questions or comments. Thank you!
+          As a seasoned web developer, I thrive in the dynamic realm of coding
+          and enjoy the ever-evolving challenges that come with it. My journey
+          began with a simple "Hello, World!" and has since evolved into a
+          deep-seated passion for creating robust, user-friendly applications.
+          Today, I am a professional web developer with three years of
+          experience helping clients design, develop, and maintain complex
+          applications. My skill set spans across the web development landscape,
+          from front-end technologies like HTML, CSS, and JavaScript to back-end
+          frameworks such as Node.js and Spring Boot. My goal is not just to
+          write code but to build solutions that make a meaningful impact.
+          Whether it's optimizing performance, enhancing user interfaces, or
+          solving complex problems, I approach each project with a blend of
+          creativity and pragmatism.
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
@@ -39,7 +46,7 @@ export const About: React.FC<AboutProps> = ({}) => {
             <ul className="list-disc">
               <li>Typescript</li>
               <li>Java</li>
-              <li>Angular</li>
+              <li>PHP</li>
               <li>React</li>
             </ul>
           </div>
@@ -54,7 +61,7 @@ export const About: React.FC<AboutProps> = ({}) => {
         </div>
       </div>
       <div className="w-2/3 mx-auto md:min-w-[150px] xl:w-1/2 md:ml-8 my-auto">
-        <img src="/profilePhoto.jpg" className="rounded-md glow" />
+        <img src="/Erik-1.png" className="rounded-md glow" />
       </div>
     </div>
   );

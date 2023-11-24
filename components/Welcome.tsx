@@ -15,11 +15,11 @@ export const Welcome: React.FC<WelcomeProps> = ({}) => {
         <p className="text-4xl mt-7">
           I&apos;m a{' '}
           <span className="font-extrabold text-[#39FF14]">
-            full stack developer{' '}
+            full stack web developer{' '}
           </span>
           from
           <br />
-          Dallas, Texas.
+          Austin, Texas.
         </p>
       </div>
     </div>

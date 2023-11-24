@@ -122,7 +122,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
             Contact
           </Link>
           <Link2
-            href="/Erik Hunter - Front End Engineer.pdf"
+            href="/Erik_Hunter_Resume.docx"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -243,7 +243,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
                   Contact
                 </Link>
                 <Link2
-                  href="/Erik Hunter - Front End Engineer.pdf"
+                  href="/Erik_Hunter_Resume.docx"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

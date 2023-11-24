@@ -30,6 +30,28 @@ export const Articles: React.FC<ArticlesProps> = ({}) => {
         >
           <img src="article2.jpg" className="rounded-md" />
         </a>
+        <a
+          href="https://codebuff.hashnode.dev/the-power-of-hash-tables"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="article3.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/pulse/4-essential-elements-all-web-developers-should-include-erik-hunter/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="article4.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
       </div>
     </div>
   );

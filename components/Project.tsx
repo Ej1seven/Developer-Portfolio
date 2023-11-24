@@ -40,7 +40,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
               </p>
             </div>
             <div className="flex flex-col justify-end md:absolute md:w-3/4 lg:w-1/2 md:right-0 md:top-60 mt-6 lg:mt-8 md:max-w-md">
-              <div className="flex flex-col justify-around h-1/3 md:my-8 lg:my-6">
+              <div className="flex flex-col justify-around h-1/3 md:my-16">
                 <div className="flex justify-end flex-wrap  w-full z-30">
                   <p className="mx-2">React.js</p>
                   <p className="mx-2">Javascript</p>
