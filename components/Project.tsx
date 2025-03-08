@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 interface ProjectProps {}
 
@@ -11,7 +11,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
         id="project"
       >
         <div className="flex md:w-3/5 lg:w-1/2 justify-center mb-8">
-          {' '}
+          {" "}
           <h1 className="text-3xl lg:text-3xl font-extrabold mr-2">
             Professional Project
           </h1>
@@ -28,7 +28,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
             />
           </Link>
           <div className="md:w-2/5">
-            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-12 lg:top-8 top-bottom-overflow-fade my-4 md:my-0 md:w-[100%] md:left-1">
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-12 lg:top-8 my-4 md:my-0 md:w-[100%] md:left-1">
               UTA Libraries
             </p>
             <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 sm:top-24 lg:top-28">
@@ -85,7 +85,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
         id="project"
       >
         <div className="flex md:w-3/5 lg:w-1/2 justify-center mb-8">
-          {' '}
+          {" "}
           <h1 className="text-3xl lg:text-3xl font-extrabold mr-2">
             Group Project
           </h1>
@@ -102,7 +102,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
             />
           </Link>
           <div className="md:w-2/5">
-            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-8 top-bottom-overflow-fade my-4 md:my-0 ">
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-8 my-4 md:my-0 ">
               Orderly
             </p>
             <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-36 lg:top-40">
@@ -161,7 +161,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
         id="project"
       >
         <div className="flex md:w-3/5 lg:w-1/2 justify-center mb-8">
-          {' '}
+          {" "}
           <h1 className="text-3xl lg:text-3xl font-extrabold mr-2">
             Personal Project
           </h1>
@@ -178,7 +178,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
             />
           </Link>
           <div className="md:w-2/5">
-            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-8 top-bottom-overflow-fade my-4 md:my-0 ">
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-8 my-4 md:my-0 ">
               Kryptoturf
             </p>
             <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-36 lg:top-40">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ArticlesProps {}
 
@@ -9,7 +9,7 @@ export const Articles: React.FC<ArticlesProps> = ({}) => {
       id="articles"
     >
       <div className="flex md:w-3/5 lg:w-1/2 justify-center mb-8">
-        {' '}
+        {" "}
         <h1 className="text-3xl lg:text-3xl font-extrabold mr-2">Articles</h1>
         <div className="flex-grow border-t border-[#FAF9F6] my-auto px-2 lg:px-8 opacity-25"></div>
       </div>
@@ -49,6 +49,28 @@ export const Articles: React.FC<ArticlesProps> = ({}) => {
         >
           <img
             src="article4.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
+        <a
+          href="https://codebuff.hashnode.dev/automating-accessibility-reports-with-spring-boot-and-react"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="article5.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
+        <a
+          href="https://codebuff.hashnode.dev/web-scraping-drupal-websites-with-nodejs-and-puppeteer"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="article6.png"
             className="rounded-md md:mt-2 glow-on-hover"
           />
         </a>
