@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
-import Link2 from 'next/link';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import Link2 from "next/link";
 
 interface NavbarProps {
   updateNavbarStatus: any;
@@ -20,28 +20,26 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
     theEnd = scrollTop;
   };
   useEffect(() => {
-    window.addEventListener('scroll', controlNavbar);
+    window.addEventListener("scroll", controlNavbar);
     return () => {
-      window.removeEventListener('scroll', controlNavbar);
+      window.removeEventListener("scroll", controlNavbar);
     };
   }, []);
   useEffect(() => {
-    const projectSection: any = document.getElementById('project');
+    const projectSection: any = document.getElementById("project");
     if (showModal) {
       updateNavbarStatus(true);
-      document.body.classList.add('lock-scrolling');
+      document.body.classList.add("lock-scrolling");
     } else {
       updateNavbarStatus(false);
-      document.body.classList.remove('lock-scrolling');
+      document.body.classList.remove("lock-scrolling");
     }
   }, [showModal]);
   return (
     <>
       <div
-        className={`${
-          showNavbar &&
-          'w-full h-20 flex items-center text-[#FAF9F6] fixed ease-in duration-500'
-        } hide-navbar z-[100]`}
+        className={`${showNavbar &&
+          "w-full h-20 flex items-center text-[#FAF9F6] fixed ease-in duration-500"} hide-navbar z-[100]`}
       >
         <Link
           activeClass="active"
@@ -75,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
             duration={500}
             className="mx-4 cursor-pointer hover:animate-bounce text-glow"
           >
-            Project
+            Projects
           </Link>
           <Link
             activeClass="active"
@@ -133,13 +131,11 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
         </div>
       </div>
       <div
-        className={`${
-          showNavbar &&
-          'w-full h-36 flex items-center text-[#FAF9F6] fixed ease-in duration-500 flex p-6 z-50'
-        } hide-navbar-mobile`}
+        className={`${showNavbar &&
+          "w-full h-36 flex items-center text-[#FAF9F6] fixed ease-in duration-500 flex p-6 z-50"} hide-navbar-mobile`}
       >
         <div className="w-1/2">
-          {' '}
+          {" "}
           <Link
             activeClass="active"
             to="/"
@@ -161,7 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
         {showModal && (
           <div className="fixed bg-white h-screen top-0 right-0 w-96 text-black flex flex-col">
             <div className="flex justify-end w-full p-4 h-16">
-              {' '}
+              {" "}
               <img
                 src="/close.png"
                 className=" h-full cursor-pointer"
@@ -192,7 +188,7 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
                   className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
                   onClick={() => setShowModal(false)}
                 >
-                  Project
+                  Projects
                 </Link>
                 <Link
                   activeClass="active"

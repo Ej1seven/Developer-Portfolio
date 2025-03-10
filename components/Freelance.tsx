@@ -55,16 +55,6 @@ export const Freelance: React.FC<ProjectProps> = ({}) => {
                     className="w-6 h-6 cursor-pointer mr-4"
                   />
                 </a>
-                <a
-                  href="https://duoscbd.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/resize.png"
-                    className="w-6 h-6 cursor-pointer md:mr-4"
-                  />
-                </a>
               </div>
             </div>
             <div className="flex justify-end">
