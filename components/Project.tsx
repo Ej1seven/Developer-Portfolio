@@ -78,10 +78,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
               height="100%"
               src="https://www.youtube.com/embed/_8Q4Jvin8ts"
               title="UTA Libraries Mobile App"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
               className="rounded-md glow-on-hover cursor-pointer"
             ></iframe>
             {/* <img
