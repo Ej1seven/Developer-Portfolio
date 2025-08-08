@@ -1,17 +1,15 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import HashLoader from 'react-spinners/HashLoader';
-import { About } from '../components/About';
-import { Articles } from '../components/Articles';
-import { Contact } from '../components/Contact';
-import { Feedback } from '../components/Feedback';
-import { Footer } from '../components/Footer';
-import { Freelance } from '../components/Freelance';
-import { Navbar } from '../components/Navbar';
-import { Project } from '../components/Project';
-import { Welcome } from '../components/Welcome';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import HashLoader from "react-spinners/HashLoader";
+import { About } from "../components/About";
+import { Articles } from "../components/Articles";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Navbar";
+import { Project } from "../components/Project";
+import { Welcome } from "../components/Welcome";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
@@ -25,8 +23,6 @@ export default function Home() {
         <Welcome />
         <About />
         <Project />
-        <Freelance />
-        <Feedback />
         <Articles />
         <Contact />
         <Footer />
@@ -51,7 +47,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {' '}
+                    {" "}
                     <img
                       src="/linkedin.png"
                       className="w-full h-8 cursor-pointer my-4"

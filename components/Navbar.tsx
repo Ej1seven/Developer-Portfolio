@@ -77,17 +77,6 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
           </Link>
           <Link
             activeClass="active"
-            to="freelance"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-            className="mx-4 cursor-pointer hover:animate-bounce text-glow"
-          >
-            Freelance
-          </Link>
-          <Link
-            activeClass="active"
             to="feedback"
             spy={true}
             smooth={true}
@@ -189,18 +178,6 @@ export const Navbar: React.FC<NavbarProps> = ({ updateNavbarStatus }) => {
                   onClick={() => setShowModal(false)}
                 >
                   Projects
-                </Link>
-                <Link
-                  activeClass="active"
-                  to="freelance"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  className="mx-4 cursor-pointer text-3xl font-extrabold hover:animate-bounce text-glow"
-                  onClick={() => setShowModal(false)}
-                >
-                  Freelance
                 </Link>
                 <Link
                   activeClass="active"
