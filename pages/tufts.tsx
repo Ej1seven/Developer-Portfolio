@@ -113,7 +113,7 @@ export default function Orderly() {
               interactive functionality, and I customized Drupal Twig templates
               to meet the site&#39;s design and accessibility requirements. I
               also conducted extensive cross-browser and device testing to
-              confirm that the theme's layout and interactivity performed
+              confirm that the theme&#39;s layout and interactivity performed
               consistently across platforms. This project deepened my
               understanding of theming in Drupal, enhanced my workflow with
               Pantheon and Lando, and taught me the importance of adaptability
