@@ -97,6 +97,17 @@ export default function Orderly() {
                 <li> ✅ Saves hours of manual work</li>
               </ul>
             </p>
+            <div className="mt-6">
+              <a
+                href="https://github.com/Ej1seven/ReportWeaver"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#39FF14] underline"
+              >
+                <img src="/github.png" className="w-5 h-5" />
+                View GitHub Repository
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -64,6 +64,28 @@ export const Articles: React.FC<ArticlesProps> = ({}) => {
           />
         </a>
         <a
+          href="https://codebuff.hashnode.dev/a11ylens-part-1-how-i-built-an-accessibility-scanner-with-nextjs-prisma-and-axe-core"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="A11yLens_Part_1.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
+        <a
+          href="https://codebuff.hashnode.dev/a11ylens-part-2-frontend-architecture-in-react-state-components-and-ui-patterns"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="max-w-[425px] w-full sm:w-3/4 mt-4 md:mt-0 md:w-[48%] cursor-pointer"
+        >
+          <img
+            src="A11yLens%20Part%202.png"
+            className="rounded-md md:mt-2 glow-on-hover"
+          />
+        </a>
+        <a
           href="https://codebuff.hashnode.dev/web-scraping-drupal-websites-with-nodejs-and-puppeteer"
           target="_blank"
           rel="noopener noreferrer"

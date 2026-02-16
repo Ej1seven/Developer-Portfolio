@@ -15,19 +15,16 @@ export const About: React.FC<AboutProps> = ({}) => {
           <div className="flex-grow border-t border-[#FAF9F6] my-auto px-8 opacity-25"></div>
         </div>
         <p>
-          As a seasoned web developer, I thrive in the dynamic realm of coding
-          and enjoy the evolving challenges that come with it. My journey began
-          with a simple &quot;Hello, World!&quot; and has since evolved into a
-          deep-seated passion for creating robust, user-friendly applications.
-          Today, I am a professional web developer with five years of experience
-          helping clients design, develop, and maintain complex applications. My
-          skill set spans across the web development landscape, from front-end
-          technologies like React and Next.js, to back-end frameworks such as
-          Node.js and Spring Boot. My goal is not just to write code but to
-          build solutions that make a meaningful impact. Whether it&apos;s
-          optimizing performance, enhancing user interfaces, or solving complex
-          problems, I approach each project with a blend of creativity and
-          pragmatism.
+          I build accessible, production-ready web applications that solve
+          complex real-world problems. Over the past five years, I&apos;ve led
+          projects across higher education and startups. I rebuilt the
+          University of Minnesota Finance web ecosystem in Drupal, shipped
+          ReportWeaver for automated accessibility reporting, and created
+          A11yLens using Next.js, Prisma, Puppeteer, and axe-core. I work
+          confidently across the stack with React, Next.js, Node.js, Spring
+          Boot, and Drupal, with a focus on measurable outcomes: stronger
+          performance, clearer user experiences, and maintainable systems teams
+          can scale.
         </p>
         <br />
         {/* <div className="mb-4 border-t border-[#FAF9F6]">
@@ -60,8 +57,8 @@ export const About: React.FC<AboutProps> = ({}) => {
           </div>
         </div>
       </div>
-      <div className="w-2/3 mx-auto md:min-w-[150px] xl:w-1/2 md:ml-8 my-auto">
-        <img src="/Erik-1.png" className="rounded-md glow" />
+      <div className="w-4/5 mx-auto md:min-w-[220px] xl:w-3/5 md:ml-8 my-auto">
+        <img src="/Erik-Full_Body_cropped_minified.jpg" className="rounded-md glow" />
       </div>
     </div>
   );

@@ -17,7 +17,97 @@ export const Project: React.FC<ProjectProps> = ({}) => {
           </h1>
           <div className="flex-grow border-t border-[#FAF9F6] my-auto px-2 lg:px-8 opacity-25"></div>
         </div>
-        <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px]">
+        <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px] mt-8 mb-4 relative">
+          <div className="z-30 md:w-3/5 order-1 md:order-first mt-4 md:mt-0 flex justify-center">
+            <a
+              href="https://finance.umn.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-30 order-1 md:order-first mt-4 md:mt-0"
+            >
+              <img
+                src="/Finance.png"
+                className="rounded-md glow-on-hover cursor-pointer"
+              />
+            </a>
+          </div>
+          <div className="md:w-2/5">
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-[-1rem] lg:top-[-2.3rem] my-4 md:my-0 md:w-[100%] md:left-1 z-40">
+              UMN Finance
+            </p>
+            <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-[3rem] lg:top-[4rem]">
+              <p className="bg-[#091310] rounded-md p-8 text-center md:text-left">
+                I led the rebuild of the University of Minnesota Finance web
+                ecosystem using Drupal, driving content architecture,
+                accessibility improvements, and a more unified user experience
+                across finance-related sites.
+              </p>
+            </div>
+            <div className="flex flex-col justify-end md:absolute md:w-3/4 lg:w-1/2 md:right-0 md:top-[11.5rem] mt-6 lg:mt-8 md:max-w-md">
+              <div className="flex flex-col justify-around h-1/3 md:my-10">
+                <div className="flex justify-end flex-wrap w-full z-30">
+                  <p className="mx-2">Drupal</p>
+                  <p className="mx-2">Accessibility</p>
+                  <p className="mx-2">Information Architecture</p>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <button className="z-30 lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 text-glow w-28 mt-4 md:mt-0">
+                  <Link href="/finance"> Details</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px] mt-8 relative">
+          <div className="z-30 md:w-3/5 order-1 md:order-first mt-4 md:mt-0 flex justify-center">
+            <Link href="/a11ylens" className="z-30 order-1 md:order-first mt-4 md:mt-0">
+              <img
+                src="/A11yLens.png"
+                className="rounded-md glow-on-hover cursor-pointer"
+              />
+            </Link>
+          </div>
+          <div className="md:w-2/5">
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-[-2rem] lg:top-[-3rem] my-4 md:my-0 md:w-[100%] md:left-1 z-40">
+              A11yLens
+            </p>
+            <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 md:top-[3rem] lg:top-[4rem]">
+              <p className="bg-[#091310] rounded-md p-8 text-center md:text-left">
+                I built A11yLens, a full-stack accessibility scanner with
+                Next.js, React, Prisma, Puppeteer, and axe-core to crawl sites,
+                detect WCAG issues, and generate actionable reports.
+              </p>
+            </div>
+            <div className="flex flex-col justify-end md:absolute md:w-3/4 lg:w-1/2 md:right-0 md:top-[10.25rem] mt-4 lg:mt-6 md:max-w-md">
+              <div className="flex flex-col justify-around h-1/3 md:my-6">
+                <div className="flex justify-end flex-wrap w-full z-30">
+                  <p className="mx-2">Next.js</p>
+                  <p className="mx-2">Prisma</p>
+                  <p className="mx-2">axe-core</p>
+                </div>
+                <div className="z-30 flex justify-end w-full mt-4 md:mt-2">
+                  <a
+                    href="https://github.com/Ej1seven/A11yLens"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/github.png"
+                      className="w-6 h-6 cursor-pointer mr-4"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <button className="z-30 lg:mx-4 cursor-pointer border-4 border-[#39FF14] rounded-md p-1 lg:p-2 text-glow w-28 mt-4 md:mt-0">
+                  <Link href="/a11ylens"> Details</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px] mt-8 relative">
           <div className="z-30 md:w-3/5 order-1 md:order-first mt-4 md:mt-0 flex justify-center">
             <iframe
               width="100%"
@@ -32,8 +122,8 @@ export const Project: React.FC<ProjectProps> = ({}) => {
             ></iframe>
           </div>
           <div className="md:w-2/5">
-            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-12 lg:top-8 my-4 md:my-0 md:w-[100%] md:left-1">
-              UMN
+            <p className="text-center text-5xl lg:text-7xl md:absolute md:top-[-1rem] lg:top-[-2.3rem] my-4 md:my-0 md:w-[100%] md:left-1 z-40">
+              ReportWeaver
             </p>
             <div className="z-30 md:absolute md:right-0 md:w-3/5 lg:w-1/2 sm:top-24 lg:top-28">
               <p className="bg-[#091310] rounded-md p-8 text-center md:text-left">
@@ -73,7 +163,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
         </div>
         <div className="w-full flex flex-col md:flex-row border-1 border-[#39ff14] rounded-md p-2 md:p-8 project-background h-full md:h-[400px] lg:h-[475px] xl:h-[500px] mt-8 relative">
           <div className="z-30 md:w-3/5 order-1 md:order-first mt-4 md:mt-0 flex justify-center">
-            <Link
+            <a
               href="https://www.tufts.edu/"
               className="z-30 order-1 md:order-first mt-4 md:mt-0"
             >
@@ -81,7 +171,7 @@ export const Project: React.FC<ProjectProps> = ({}) => {
                 src="/Tufts.png"
                 className="rounded-md glow-on-hover cursor-pointer"
               />
-            </Link>
+            </a>
           </div>
           <div className="md:w-2/5">
             <p className="text-center text-5xl lg:text-7xl md:absolute md:top-[-1rem] lg:top-[-2.3rem] my-4 md:my-0 md:w-[100%] md:left-1 z-40">
